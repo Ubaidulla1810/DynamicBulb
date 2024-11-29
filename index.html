@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Bulb Color Changer</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="bulb.css">
+</head>
+<body>
+    <div class="main_container">
+        <div class="box">
+
+        </div>
+        <div class="class_btn">
+            <button type="button" class="btn btn1">ON</button>
+            <button type="button" class="btn btn2">OFF</button>
+        </div>
+    </div>
+ <script>
+          let box=document.querySelector(".box")
+          let btn1=document.querySelector(".btn1")
+          let btn2=document.querySelector(".btn2")
+
+          btn1.addEventListener("click",(e)=>{
+             let input= prompt("which color do you want to display ?")
+              box.style.backgroundColor= input;
+            })
+
+          btn2.addEventListener("click",(e)=>{
+            box.style.backgroundColor="white";
+          })
+
+ </script>
+</body>
+</html>
